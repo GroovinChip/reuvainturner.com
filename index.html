@@ -1,0 +1,151 @@
+<!-- Reuben Turner -->
+<!-- www.reuvainturner.com -->
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>  
+    <head>
+		<title>Reuvain Turner</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+        rel="stylesheet" type="text/css">
+        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+        rel="stylesheet" type="text/css">
+		<link type="text/css" rel="stylesheet" href="css/newStyles.css" />
+		<script>
+			$(document).ready(function(){
+				$('.changes').hide();
+				$('h4').click(function() 
+				{
+					var $answer = $(this).next('.changes');
+					if ($answer.is(':hidden')) 
+					{
+						$answer.slideDown();
+					} 
+					else 
+					{
+						$answer.slideUp();
+					}
+				}); // end click
+			}); // end ready
+		</script>
+    </head>  
+    <body>
+	<div id="wrapper">
+        <div class="section"> <!-- contains nav and main content -->
+            <div class="container"> <!-- contains header -->
+                <div class="row" id="header"> 
+                    <div class="col-md-12">
+                        <h1 class="text-center">Reuvain Turner</h1>
+                    </div>
+                </div>
+                <div class="row"> <!-- contains nav -->
+                    <div class="col-md-12">
+                        <ul class="nav nav-justified nav-pills">
+                            <li class="active">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-expanded="false">Resume<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="resumeSkills.html">Skills</a>
+                                    </li>
+                                    <li>
+                                        <a href="resumeObjective.html">Objective</a>
+                                    </li>
+                                    <li>
+                                        <a href="resumeEducation.html">Education</a>
+                                    </li>
+									<li>
+                                        <a href="resumeWorkExp.html">Work Experience</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="media/Reuben Turner Resume.pdf" target="_blank">Download PDF Resume</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="about.html">About Me</a>
+                            </li>
+                            <li>
+                                <a href="contactNew.php">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/RT.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Welcome to my website!</h3>
+                        <p>
+							Welcome to my website! This is where you can view my resume, learn more about me, and get in touch with me.​ The idea is to exercise my website building skills to provide a dynamic and deep resume, where I’m not constrained to a page or two, and can neatly organize all of the content. Kind of like a glorified business card!
+						</p>
+						<p style="border-bottom: 1px dashed black; padding-bottom: 10px;">
+							Feel free to take a look at the source code of this site to get a feel for my coding and design styles. I've used HTML, CSS with Bootstrap, JQuery, and a dash of PhP.
+						</p>
+						<h4 class="indexContentToggle">Changelog</h4>
+						<div class="changes">
+							<ul>
+								<li>Version 1.0 - Launch site</li>
+								<li>Version 1.1 - Add PDF view/download to resume nav</li>
+								<li>Version 1.1.1 - Change PDF link color on hover</li>
+								<li>Version 1.2 - Add changelog</li>
+								<li>Version 1.3 - Add ability to open/collapse changelog</li>
+								<li>Version 1.4 - Updated contact.html with a form </li>
+								<li>Version 1.4.1 - Security fixes</li>
+								<li>Version 1.5 - Added favicon</li>
+								<li>Version 1.6 - Bug fixes</li>
+								<li>Version 1.7 - JQuery form validation</li>
+								<li>Version 1.8 - Added Google Analytics</li>
+							</ul>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="section section-info">
+            <!-- <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3>Site navigation</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="text-info text-right">
+                            <br>
+                            <br>
+                        </p>
+                        <div class="row">
+                            <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
+                                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 hidden-xs text-right">
+                                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </footer>
+	</div>
+    </body>
+</html>

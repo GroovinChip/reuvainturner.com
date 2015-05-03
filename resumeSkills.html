@@ -1,0 +1,339 @@
+<!-- Reuvain Turner -->
+<!-- www.reuvainturner.com -->
+<!-- resumeSkills.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Reuvain Turner</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+    rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+    rel="stylesheet" type="text/css">
+	<link type="text/css" rel="stylesheet" href="css/newStyles.css" />
+	<script>
+		$(document).ready(function(){
+			$('.skillsLi .showHide').hide();
+			$('.skillsLi span').click(function() 
+			{
+				var $answer = $(this).next('.skillsLi .showHide');
+				if ($answer.is(':hidden')) 
+				{
+					$answer.slideDown();
+				} 
+				else 
+				{
+					$answer.slideUp();
+				}
+			}); // end click
+		}); // end ready
+		</script>
+</head>
+<body>
+	<div id="wrapper">
+        <div class="section"> <!-- contains nav and main content -->
+            <div class="container"> <!-- contains header -->
+                <div class="row" id="header"> 
+                    <div class="col-md-12">
+                        <h1 class="text-center">Reuvain Turner</h1>
+                    </div>
+                </div>
+                <div class="row"> <!-- contains nav -->
+                    <div class="col-md-12">
+                        <ul class="nav nav-justified nav-pills">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-expanded="false">Resume<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li class="active">
+                                        <a href="resumeSkills.html">Skills</a>
+                                    </li>
+                                    <li>
+                                        <a href="resumeObjective.html">Objective</a>
+                                    </li>
+                                    <li>
+                                        <a href="resumeEducation.html">Education</a>
+                                    </li>
+									<li>
+                                        <a href="resumeWorkExp.html">Work Experience</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="media/Reuben Turner Resume.pdf" target="_blank">Download PDF Resume</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="about.html">About Me</a>
+                            </li>
+                            <li>
+                                <a href="contactNew.php">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+					<div class="col-md-4"> <!-- resume nav -->
+						<div class="bs-example" data-example-id="vertical-button-group">
+							<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+								<button type="button" class="btn btn-default">Skills</button>
+								<button type="button" class="btn btn-default">Objective</button>
+								<button type="button" class="btn btn-default">Education</button>
+								<button type="button" class="btn btn-default">Work Experience</button>
+								<button type="button" class="btn btn-default" id="PDFbtn"><a href="media/Reuben Turner Resume.pdf" target="_blank">Download PDF Version</a></button>
+							</div>
+						</div>	
+					</div>
+					<div class="col-md-8"> <!-- resume section -->
+						<div id="resumeSection" class="panel panel-default">
+							<div class="panel-heading">Skills</div>
+								<div class="panel-body">
+									<h3>Programming Languages</h3>
+									<ul id="skillsUl">
+										<li class="skillsLi">
+											<span class="liTitle">Java</span> 
+											<div class="showHide">
+												<p>I learned to program in Java! I'm very comfortable with it.</p>
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">C++</span>
+											<div class="showHide">
+											<p>I've done no OOP C++, but the syntax is very familiar to me.</p>
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">HTML</span>
+											<div class="showHide">
+											<p>I'm very comfortable with HTML. After all, I made this website!</p>
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">CSS</span>
+											<div class="showHide">
+											<p>Same here! I love applying great looking CSS to my HTML.</p>
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">JavaScript/Jquery</span>
+											<div class="showHide">
+											<p>This is a little newer to me, but I'm making a lot of progress here.</p>
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">PhP</span>
+											<div class="showHide">
+											<p>I've done a little of the CodeAcademy online class for PhP.
+											<br>As well, PhP is used on the contact page of this site.</p>
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">Objective-C</span>
+											<div class="showHide">
+												<p>My least favorite language! I just feel like it's very sloppy.</p>
+											</div>
+										</li>
+									</ul>
+									<h3>Programming Skills</h3>
+									<ul class="skillsUl">
+										<li class="skillsLi">
+											<span class="liTitle">Object Oriented Concepts</span>
+											<br>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">Software Design</span>
+											<br>
+										</li>				
+										<li class="skillsLi">
+											<span class="liTitle">Mobile Application Development</span>
+											<br>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">Software Development Life Cycle</span>
+											<br>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">Data Structures</span>
+											<br>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">Front End Web Design</span>
+											<br>
+										</li>
+									</ul>
+									<h3>Platforms and Operating Systems</h3>
+									<ul id="skillsUl">
+										<li class="skillsLi">
+											<span class="liTitle">Microsoft Windows</span>
+											<div class="showHide">
+												<p>I have significant experience and familiarity with Windows 7, 8, 8.1 and 10. I'm an avid Windows user.</p>
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">Microsoft Windows Phone</span>
+											<div class="showHide">
+												<p>I love Windows Phone! I have significant experience and familiarity with WP8, 8.1, and 10. I've used a Nokia Lumia 920, 520, 525, and 635.</p>
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">Google Android</span>
+											<div class="showHide">
+												<p>While not my favorite mobile OS, I have used a Moto G (1st gen) for a time.</p>
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">iOS</span>
+											<div class="showHide">
+												<p>My least favorite mobile OS. I used an iPhone 4 before I switched to Windows Phone.</p>
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">Mac OSX</span>
+											<div class="showHide">
+												<p>While I have a distaste for them, I can use Macs largely without hindrance.</p>
+											</div>
+										</li>
+									</ul>
+									<h3>Software</h3>
+									<ul id="skillsUl">
+										<li class="skillsLi">
+											<span class="liTitle">Microsoft Office</span>
+											<div class="showHide">
+												<p>I use Word and Excel daily, and I'm pretty good with PowerPoint. I also rely heavily on OneDrive for cloud storage.</p>
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">Google Services</span>
+											<div class="showHide">
+												<p>I use Gmail daily, and I'm very familiar with Drive and the Play Store.</p>
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">Eclipse</span>
+											<div class="showHide">
+												<p>For Java/Android development.</p>
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">Notepad++</span>
+											<div class="showHide">
+												<p>For all my web development.</p>
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">Android Studio</span>
+											<div class="showHide">
+												<p>For Android development.</p>
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">Browsers</span>
+											<div class="showHide">
+												<p>Chrome, Firefox, IE, Safari, Opera - I've used them all.</p>
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">CodeBlocks</span>
+											<div class="showHide">
+												<p>For C++ development.</p>
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">Antivirus Software</span>
+											<div class="showHide">
+												<p>Windows Defender, Malwarebytes, Avast Antivirus.</p>
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">Email Services/Clients</span>
+											<div class="showHide">
+												<p>Gmail, Outlook</p>
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">Organizational Tools</span>
+											<div class="showHide">
+												<p>Trello</p>
+												<p>Asana</p>
+											</div>
+										</li>
+									</ul>
+									<h3>Other Skills</h3>
+									<ul id="skillsUl">
+										<li class="skillsLi">
+											<span class="liTitle">Communication</span>
+											<div class="showHide">
+												<p>Phone, email, interpersonal</p>
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">Project Management</span>
+											<div class="showHide">
+												<!-- <p></p> -->
+											</div>
+										</li>
+										<li class="skillsLi">
+											<span class="liTitle">Organization</span>
+											<div class="showHide">
+												<!-- <p></p> -->
+											</div>
+										</li>
+										<!-- <li class="skillsLi">
+											<span class="liTitle"></span>
+											<div class="showHide">
+												<p></p>
+											</div>
+										</li> -->
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <footer class="section section-info">
+            <!-- <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3>Site navigation</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="text-info text-right">
+                            <br>
+                            <br>
+                        </p>
+                        <div class="row">
+                            <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
+                                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 hidden-xs text-right">
+                                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </footer>
+	</div>
+</body>
+</html>

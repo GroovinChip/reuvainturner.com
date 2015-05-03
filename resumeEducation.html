@@ -1,0 +1,134 @@
+<!-- Reuvain Turner -->
+<!-- www.reuvainturner.com -->
+<!-- resumeEducation.html -->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Reuvain Turner</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="css/styles.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.skillsLi .showHide').hide();
+			$('.skillsLi span').click(function() 
+			{
+				var $answer = $(this).next('.skillsLi .showHide');
+				if ($answer.is(':hidden')) 
+				{
+					$answer.slideDown();
+				} 
+				else 
+				{
+					$answer.slideUp();
+				}
+			}); // end click
+		}); // end ready
+	</script>
+</head>
+<body>
+	<header><h1>Reuvain Turner</h1></header>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="index.html">Reuvain Turner</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Resume<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="resumeSkills.html">Skills</a></li>
+							<li><a href="resumeObjective.html">Objective</a></li>
+							<li class="active"><a href="resumeEducation.html">Education</a></li>
+							<li><a href="resumeWorkExp.html">Work Experience</a></li>
+							<li><a href="resumeReferences.html">References</a></li>
+						</ul>
+					</li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contactNew.php">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main>
+	  <div id="leftNav">
+		<ul id="resumeUl">
+			<a href="resumeSkills.html" class="resumeNavLinks">
+				<li class="resumeNav" id="openEduSection">	
+					Skills
+				</li>
+			</a>
+			<a href="resumeObjective.html" class="resumeNavLinks">
+				<li class="resumeNav">	
+					Objective
+				</li>
+			</a>
+			<a href="resumeEducation.html" class="resumeNavLinks">
+				<li class="resumeNav">	
+					Education
+				</li>
+			</a>
+			<a href="resumeWorkExp.html" class="resumeNavLinks">
+				<li class="resumeNav">	
+					Work Experience
+				</li>
+			</a>
+			<a href="resumeReferences.html" class="resumeNavLinks">
+				<li class="resumeNav">	
+					References
+				</li>
+			</a>
+			<a href="media/Reuben Turner Resume.pdf" class="resumeNavLinks" target="_blank">
+				<li id="PDFLink">	
+					PDF Resume
+				</li>
+			</a>
+		</ul>
+	  </div>
+		<div id="resumeSection">
+			<h3>College</h3>
+			<ul class="resumeUl">
+				<li class="skillsLi">
+					<span class="liTitle">CCBC Catonsville</span>
+					<div class="showHide">
+						<p>2011-Present</p>
+						<p style="font-weight: bold;">Relevant Classes:</p>
+							<!-- <div class="showHide"> -->
+								<p>Intro to Programming</p>
+								<p>Advanced Programming</p>
+								<p>C++</p>
+								<p>Intro to Mobile App Development</p>
+								<p>Intro to Android App Development</p>
+								<p>Intro to iOS App Development</p>
+								<p>Web Standards</p>
+								<p>Javascript and JQuery</p>
+								<p>Intro to Information Assurance</p>
+								<p>Intro to Business</p>
+								<p>Principles of Management</p>
+							<!-- </div> -->
+					</div>
+				</li>
+				<li class="skillsLi">
+					<span class="liTitle">Thomas Edison University</span>
+					<div class="showHide">
+						<p>While I am a student at CCBC, a community college, I will actually be receiving my Bachelors Degree from TE in December, 2015.
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</main>
+	<footer>Note: This website is not optimized for mobile devices.</footer>
+</body>
+</html>

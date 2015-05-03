@@ -1,0 +1,108 @@
+<!-- Reuvain Turner -->
+<!-- www.reuvainturner.com -->
+<!-- resumeObjective.html -->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Reuvain Turner</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="css/styles.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.skillsLi .showHide').hide();
+			$('.skillsLi span').click(function() 
+			{
+				var $answer = $(this).next('.skillsLi .showHide');
+				if ($answer.is(':hidden')) 
+				{
+					$answer.slideDown();
+				} 
+				else 
+				{
+					$answer.slideUp();
+				}
+			}); // end click
+		}); // end ready
+	</script>
+</head>
+<body>
+	<header><h1>Reuvain Turner</h1></header>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="index.html">Reuvain Turner</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Resume<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="resumeSkills.html">Skills</a></li>
+							<li class="active"><a href="resumeObjective.html">Objective</a></li>
+							<li><a href="resumeEducation.html">Education</a></li>
+							<li><a href="resumeWorkExp.html">Work Experience</a></li>
+							<li><a href="resumeReferences.html">References</a></li>
+						</ul>
+					</li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contactNew.php">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main>
+	  <div id="leftNav">
+		<ul id="resumeUl">
+			<a href="resumeSkills.html" class="resumeNavLinks">
+				<li class="resumeNav" id="openEduSection">	
+					Skills
+				</li>
+			</a>
+			<a href="resumeObjective.html" class="resumeNavLinks">
+				<li class="resumeNav">	
+					Objective
+				</li>
+			</a>
+			<a href="resumeEducation.html" class="resumeNavLinks">
+				<li class="resumeNav">	
+					Education
+				</li>
+			</a>
+			<a href="resumeWorkExp.html" class="resumeNavLinks">
+				<li class="resumeNav">	
+					Work Experience
+				</li>
+			</a>
+			<a href="resumeReferences.html" class="resumeNavLinks">
+				<li class="resumeNav">	
+					References
+				</li>
+			</a>
+			<a href="media/Reuben Turner Resume.pdf" class="resumeNavLinks" target="_blank">
+				<li id="PDFLink">	
+					PDF Resume
+				</li>
+			</a>
+		</ul>
+	  </div>
+		<div id="resumeSection" class="showHide">
+			<p>My goal is to be the best programmer and software designer that I can be, and to utilize my skills in a professional environment.<p>
+			<p style="padding-left:10px; padding-right: 10px;">So why should you hire me? I don't have my degree yet, and the only experience programming that I have outside of school is this very website. It's a good question, but the answer is very simple: I am dedicated, smart, and hard-working. I don't do things halfway; I was raised with the values of hard work and doing a good job.</p>
+			<p>I have a family to support, and I am committed to them 100000%. I will do whatever it takes to provide for them, and that means being the best at whatever I do. I'm currently one of the most relied upon employees at the company I work for. <span style="font-style: italic;">If you hire me, I will be the same for you.</span></p>
+			<p>The choice is up to you. You have nothing to lose by reaching out to me or scheduling an interview. Why not go for it?</p>
+		</div>
+	</main>
+	<footer>Note: This website is not optimized for mobile devices.</footer>
+</body>
+</html>

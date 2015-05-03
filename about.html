@@ -1,0 +1,118 @@
+<!-- Reuvain Turner -->
+<!-- www.reuvainturner.com -->
+<!-- about.html -->
+
+<!DOCTYPE html>
+<html>  
+    <head>
+		<title>Reuvain Turner</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+		<link type="text/css" rel="stylesheet" href="css/newStyles.css" />
+		<script>
+		$(document).ready(function() 
+		{
+			$('.aboutMeContent').hide();
+			$('.aboutMeHeaders').click(function() 
+			{
+				var $answer = $(this).next('.aboutMeContent');
+				if ($answer.is(':hidden')) 
+				{
+					$answer.slideDown();
+				} 
+				else 
+				{
+					$answer.slideUp();
+				}
+			}); // end click
+		}); // end ready
+	</script>
+    </head>  
+    <body>
+	<div id="wrapper">
+        <div class="section">
+            <div class="container">
+                <div class="row" id="header">
+                    <div class="col-md-12">
+                        <h1 class="text-center">Reuvain Turner</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav nav-justified nav-pills">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-expanded="false">Resume<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="resumeSkills.html">Skills</a>
+                                    </li>
+                                    <li>
+                                        <a href="resumeObjective.html">Objective</a>
+                                    </li>
+                                    <li>
+                                        <a href="resumeEducation.html">Education</a>
+                                    </li>
+									<li>
+                                        <a href="resumeWorkExp.html">Work Experience</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="media/Reuben Turner Resume.pdf" target="_blank">Download PDF Resume</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="active">
+                                <a href="about.html">About Me</a>
+                            </li>
+                            <li>
+                                <a href="contactNew.php">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <p id="openClose">Click to open/close any of the categories below</p>
+					<h3 class="aboutMeHeaders">Basic Info</h3>
+					<div class="aboutMeContent">
+						<ul>
+							<li>Age: 23</li>
+							<li>Location: Baltimore, MD</li>
+							<li>Marital Status: Happily married!</li>
+						</ul>
+					</div>
+					<h3 class="aboutMeHeaders">My Hobbies</h3>
+					<div class="aboutMeContent">
+						<ul>
+							<li>Spending time with my wife</li>
+							<li>Listening to music</li>
+							<li>Playing guitar</li>
+							<li>Making websites</li>
+							<li>Reading</li>
+							<li>Watching TV/Movies</li>
+						</ul>
+					</div>
+					<h3 class="aboutMeHeaders">Other Things I Like</h3>
+					<div class="aboutMeContent">
+						<ul>
+							<li>Technology</li>
+							<li>Playing sports</li>
+							<li>Writing/recording music (when I have the time)</li>
+							<li>Drawing/sketching</li>
+						</ul>
+					</div>
+				</div>
+            </div>
+        </div>
+        <footer class="section section-primary text-center">
+            
+        </footer>
+	</div>
+    </body>
+</html>

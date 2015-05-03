@@ -1,0 +1,142 @@
+<!-- Reuvain Turner -->
+<!-- www.reuvainturner.com -->
+<!-- resumeWorkExp.html -->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Reuvain Turner</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="css/styles.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.skillsLi .showHide').hide();
+			$('.skillsLi span').click(function() 
+			{
+				var $answer = $(this).next('.skillsLi .showHide');
+				if ($answer.is(':hidden')) 
+				{
+					$answer.slideDown();
+				} 
+				else 
+				{
+					$answer.slideUp();
+				}
+			}); // end click
+		}); // end ready
+	</script>
+</head>
+<body>
+	<header><h1>Reuvain Turner</h1></header>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="index.html">Reuvain Turner</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Resume<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="resumeSkills.html">Skills</a></li>
+							<li><a href="resumeObjective.html">Objective</a></li>
+							<li><a href="resumeEducation.html">Education</a></li>
+							<li class="active"><a href="resumeWorkExp.html">Work Experience</a></li>
+							<li><a href="resumeReferences.html">References</a></li>
+						</ul>
+					</li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contactNew.php">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main>
+	  <div id="leftNav">
+		<ul id="resumeUl">
+			<a href="resumeSkills.html" class="resumeNavLinks">
+				<li class="resumeNav" id="openEduSection">	
+					Skills
+				</li>
+			</a>
+			<a href="resumeObjective.html" class="resumeNavLinks">
+				<li class="resumeNav">	
+					Objective
+				</li>
+			</a>
+			<a href="resumeEducation.html" class="resumeNavLinks">
+				<li class="resumeNav">	
+					Education
+				</li>
+			</a>
+			<a href="resumeWorkExp.html" class="resumeNavLinks">
+				<li class="resumeNav">	
+					Work Experience
+				</li>
+			</a>
+			<a href="resumeReferences.html" class="resumeNavLinks">
+				<li class="resumeNav">	
+					References
+				</li>
+			</a>
+			<a href="media/Reuben Turner Resume.pdf" class="resumeNavLinks" target="_blank">
+				<li id="PDFLink">	
+					PDF Resume
+				</li>
+			</a>
+		</ul>
+	  </div>
+		<div id="resumeSection">
+			<h3>Limited Goods, LLC</h3>
+			<ul class="resumeUl">
+				<li class="skillsLi">
+					<span class="liTitle">Customer Service/IT</span>
+					<div class="showHide">
+						<p>June 2013 - Present.</p>
+						<p>Set up and deploy new workstations</p>
+						<p>Create and manage user accounts</p>
+						<p>Communicate with customers via email and phone who are unsatisfied<br>and 
+						provide a satisfactory resolution</p>
+						<p>Proactively reach out to unsatisfied customers to ensure greater satisfaction</p>
+						<p>Order inventory</p>
+						<p>Represent claims</p>
+						<p>Ensure order correctness</p>
+					</div>
+				</li>
+				<li class="skillsLi">
+					<span class="liTitle">Warehouse Clerk</span>
+					<div class="showHide">
+						<p>April 2012 - June 2013</p>
+						<p>Fulfill orders correctly</p>
+						<p>Ensure inventory is organized</p>
+						<p>Work in a team</p>
+					</div>
+				</li>
+			</ul>
+			<h3>Sleeptime Mattresses</h3>
+			<ul class="resumeUl">
+				<li class="skillsLi">
+					<span class="liTitle">Delivery Driver</span>
+					<div class="showHide">
+						<p>August 2011 - March 2012</p>
+						<p>Deliver mattresses</p>
+						<p>Set up bed frames for customers</p>
+						<p>Receive shipments from suppliers</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</main>
+	<footer>Note: This website is not optimized for mobile devices.</footer>
+</body>
+</html>
